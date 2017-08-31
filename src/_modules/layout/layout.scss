@@ -19,3 +19,16 @@ html {
   // Check out: https://www.smashingmagazine.com/2016/05/fluid-typography/
   font-size: calc(12px + (24 - 12)*((100vmin - 400px)/(800 - 400)));
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: 0 0;
+  background-color: rgba(50,50,50,0.25);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
