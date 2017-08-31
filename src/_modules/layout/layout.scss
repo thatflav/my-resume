@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // Values in calc() explained
+  //   12 px -> minimum font size
+  //   24 - 12 -> (max font sizee - min font size)
+  //   100 vmin -> the smaller value of the width and height of the viewport
+  //   400px -> min screen size
+  //   800 - 400 -> max screen size - min screen size
+  // Check out: https://www.smashingmagazine.com/2016/05/fluid-typography/
+  font-size: calc(12px + (24 - 12)*((100vmin - 400px)/(800 - 400)));
+}
