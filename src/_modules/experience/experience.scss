@@ -1,0 +1,59 @@
+.experience__header {
+  color: var(--color-periwinkle-gray);
+  
+  @extend %header;
+}
+
+.experience__title {
+  display: block;
+  background-color: var(--color-gumbo);
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.experience__input,
+.experience__details {
+  display: none;
+}
+
+.experience__input:checked + .experience__details {
+  display: block;
+}
+
+.experience__date {
+  font-style: italic;
+}
+
+.experience__details {
+  border: 0.2rem solid var(--color-gumbo);
+  margin-top: -0.1rem;
+  border-top: 0;
+}
+
+.experience__company {
+  font-weight: bold;
+}
+
+.experience__company,
+.experience__date {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.experience__top {
+  display: flex;
+  justify-content: space-between
+}
+
+.experience__responsability {
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+
+  &:nth-child(odd) {
+    background-color: var(--color-fantasy);
+  }
+
+  &:nth-child(even) {
+    background-color: var(--color-twilight);
+  }
+}
