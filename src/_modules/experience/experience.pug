@@ -32,10 +32,14 @@
   ]
 #experience
 .experience
+  input.experience__input(type="radio", name="the-same", id="experience-default", checked)
   .experience__header=header
   each experience, key in experienceList
-    label.experience__title(for=`experience-id-${key}`)=experience.title
     input.experience__input(type="radio", name="the-same", id=`experience-id-${key}`)
+    label.experience__title(for=`experience-id-${key}`)
+      | #{experience.title}
+      label.experience__close(for="experience-default")
+        span.my-cv__icon--plus
     .experience__details
       .experience__top
         .experience__date=experience.date

@@ -7,19 +7,38 @@
 .experience__title {
   display: block;
   background-color: var(--color-gumbo);
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.8rem;
   color: var(--color-white);
   cursor: pointer;
 }
+
+.my-cv__icon--plus {
+  float: right;
+}
+
 
 .experience__input,
 .experience__details {
   display: none;
 }
 
-.experience__input:checked + .experience__details {
+.experience__input:checked + .experience__title + .experience__details {
   display: block;
+}
+
+.experience__input:checked + .experience__title {
+  .experience__close {
+    pointer-events: all;
+
+    .my-cv__icon--plus {
+      transform: rotateZ(45deg)
+    }
+  }
+}
+
+.experience__close {
+  pointer-events: none;
 }
 
 .experience__date {
