@@ -24,7 +24,7 @@
     },
     {
       "icon": "earth",
-      "url": "http://lmgtfy.com/?q=flavius+bohaciuc"
+      "url": "http://lmgtfy.com/?q=flaviusbohaciuc"
     }
   ]
 #landing-page
@@ -36,4 +36,15 @@
       each social, key in socialList
         li.landing-page__social-item
           label.landing-page__social-label(for=`message-box-id-${key}`)
-            span(class=`my-cv__icon--${social.icon}`) 
+            span(class=`my-cv__icon--${social.icon}`)
+    .landing-page__box
+      .landing-page__box-body
+        input.landing-page__box-radio(type="radio", name="message-box", id="message-default", checked)
+        .landing-page__box-message Click the above icons to reveal
+        .landing-page__box-header
+          .landing-page__box-info Click link to visit
+          label.landing-page__box-close(for="message-default") &times;
+        each social, key in socialList
+          input.landing-page__box-radio(type="radio", name="message-box", id=`message-box-id-${key}`)
+          .landing-page__box-message
+            a.landing-page__box-link(href=social.url, target="_blank")=social.url
