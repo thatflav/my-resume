@@ -1,3 +1,9 @@
+.menu {
+  padding: 2rem;
+  background-color: var(--color-white);
+  position: relative;
+}
+
 .menu__list {
   margin: 2rem;
   border: 0.1rem solid var(--color-manatee);
@@ -19,4 +25,16 @@
 
 .menu__label {
   padding: 0 1rem;
+}
+
+.menu__go-to {
+  background-color: var(--color-fiord);
+  color: var(--color-white);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }

@@ -1,0 +1,65 @@
+.landscape,
+.landscape__input {
+  display: none;
+}
+
+.landscape {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-manatee);
+  transition: 0.25s;
+}
+
+.landscape__button {
+  display: block;
+  background-color: var(--color-fiord);
+  color: var(--color-white);
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border: 0.1rem solid var(--color-white);
+}
+
+.landsape__description {
+  padding: 2rem 0;
+}
+
+@media (orientation: landscape) {
+  .landscape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 2rem;
+  }
+
+  .landscape__list {
+    list-style-type: disc;
+  }
+
+  .landscape__meesage--show {
+    display: none;
+  }
+
+  .landscape__meesage--hide {
+    display: block;
+  }
+
+  #landscape:checked + .landscape {
+    top: -100%;
+
+    .landscape__meesage--show {
+      display: block;
+    }
+
+    .landscape__meesage--hide {
+      display: none;
+    }
+  }
+}
