@@ -9,9 +9,7 @@
 
 .about-me__header {
   color: var(--color-white);
-  padding: 1rem 2rem;
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  @extend %header;
 }
 
 .about-me__full-name {
