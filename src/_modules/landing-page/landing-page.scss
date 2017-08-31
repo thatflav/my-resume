@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(#cdebf7, #059fdb)
+  background-image: radial-gradient(var(--color-humming-bird), var(--color-cerulean))
 }
 
 .landing-page__wrapper {
@@ -26,7 +26,7 @@
 }
 
 .landing-page__social-label {
-  color: #fff;
+  color: var(--color-white);
   padding: 0.1rem 0.3rem;
   font-size: 1.8rem;
   cursor: pointer;
@@ -34,7 +34,7 @@
 .landing-page__box-radio,
 .landing-page__box-message {
   display: none;
-  color: white;
+  color: var(--color-white);
 }
 
 #message-default:checked + .landing-page__box-message + .landing-page__box-header {
@@ -47,7 +47,7 @@
 
 .landing-page__box-body {
   display: inline-block;
-  border: 0.2rem solid white;
+  border: 0.2rem solid var(--color-white);
   border-radius: 0.5rem;
   padding: 0.8rem;
   margin-top: 0.5rem;
@@ -65,7 +65,7 @@
 
 .landing-page__box-info,
 .landing-page__box-close {
-  background-color: white;
+  background-color: var(--color-white);
   padding: 0.4rem;
   white-space: nowrap;
   line-height: 1.5rem;
@@ -94,5 +94,5 @@
   text-overflow: ellipsis;
   max-width: 80vmin;
   display: block;
-  color: white;
+  color: var(--color-white);
 }
