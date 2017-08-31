@@ -6,7 +6,7 @@
   var slogan = `I want to conquer the world and make a difference.`
   var achievement = {
     title: 'achievement',
-    content: `something nice will come here in the update`
+    content: `Something nice will come here in the update`
   }
   var coolStuff = {
     title: 'grab cool stuff',
@@ -31,15 +31,16 @@
 #about-me
 .about-me
   .about-me__header=header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imgPath)
   .about-me__full-name=myFullName
   .about-me__title=myTitle
-  .about-me__avatar-wrapper
-    img(src=imgPath)
   p=slogan
-  h2=achievement.title
+  .about-me__title=achievement.title
   p=achievement.content
+  .about-me__title=coolStuff.title
   .about-me__link-list
     each link in coolStuff.linkList
-      a.about-link(href=link.url)
-        span.about-link-description=link.text
-        span(class=`resume-icon-${link.icon}`)
+      a.about-me__link(href=link.url, target="_blank")
+        span.about-me__link-description=link.text
+        span(class=`my-cv__icon--${link.icon}`)

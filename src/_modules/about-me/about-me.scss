@@ -1,0 +1,83 @@
+.about-me {
+  background-image: radial-gradient(ellipse,#f4c6b4,#db4105);
+}
+
+.about-me__header {
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-me__full-name {
+  font-size: 2.5rem;
+}
+
+.about-me__title {
+  font-size: 2rem;
+}
+
+.about-me__full-name,
+.about-me__title {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: justify;
+  padding: .7rem 2rem;
+  text-indent: 2rem;
+}
+
+.about-me__link-list {
+  text-align: center;
+}
+
+.about-me__link {
+  border: .1rem solid #d1adc2;
+  color: #7ea1a6;
+  background-color: #fff;
+  padding: 1rem;
+  width: 75%;
+  margin: 1rem auto;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: .3rem;
+  text-decoration: none;
+}
+
+.about-me__link-description {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.about-me__avatar-wrapper {
+  max-width: 50%;
+  margin: 1rem auto;
+  border: .5rem solid rgba(255,255,255,.3);
+  position: relative;
+  border-radius: 50%;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: -1.5rem;
+    top: -1.5rem;
+    bottom: -1.5rem;
+    right: -1.5rem;
+    border-radius: 50%;
+    border: .5rem solid rgba(255,255,255,.3);
+  }
+}
+
+.about-me__avatar {
+  border-radius: 50%;
+  width: 100%;
+  border: .5rem solid rgba(233, 117, 104, 0.35);
+}
