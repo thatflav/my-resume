@@ -25,9 +25,74 @@
   margin-top: 3rem;
 }
 
-.landing-page__social-item {
+.landing-page__social-label {
   color: #fff;
   padding: 0.1rem 0.3rem;
   font-size: 1.8rem;
   cursor: pointer;
+}
+.landing-page__box-radio,
+.landing-page__box-message {
+  display: none;
+  color: white;
+}
+
+#message-default:checked + .landing-page__box-message + .landing-page__box-header {
+  display: none;
+}
+
+.landing-page__box-radio:checked + .landing-page__box-message {
+  display: inherit;
+}
+
+.landing-page__box-body {
+  display: inline-block;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.landing-page__box-header {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-page__box-info,
+.landing-page__box-close {
+  background-color: white;
+  padding: 0.4rem;
+  white-space: nowrap;
+  line-height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.landing-page__box-info {
+  border-bottom-left-radius: 0.5rem;
+  flex-grow: 1;
+}
+
+.landing-page__box-close {
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  width: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.landing-page__box-link:visited,
+.landing-page__box-link {
+  font-size: 1.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  max-width: 80vmin;
+  display: block;
+  color: white;
 }
