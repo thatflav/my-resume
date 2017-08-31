@@ -1,0 +1,20 @@
+.landing-page {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(#cdebf7, #059fdb)
+}
+
+.landing-page__wrapper {
+  text-align: center;
+}
+
+.landing-page__title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+}
+
+.landing-page__sub-title {
+  font-size: 3rem;
+}
