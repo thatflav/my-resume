@@ -1,0 +1,45 @@
+-
+  var myFullName = 'Flavius Bohaciuc'
+  var myTitle = 'Web Developer'
+  var header = '#about me'
+  var imgPath = 'asset/image/flavius-bohaciuc-avatar.jpg'
+  var slogan = `I want to conquer the world and make a difference.`
+  var achievement = {
+    title: 'achievement',
+    content: `something nice will come here in the update`
+  }
+  var coolStuff = {
+    title: 'grab cool stuff',
+    linkList: [
+      {
+        url: "https://github.com/flaviusbohaciuc/my-resume",
+        icon: "github",
+        text: "Click to visit the GitHub project source"
+      }
+      ,{
+        url: "asset/doc/CV-resume.rtf",
+        icon: "file-word",
+        text: `Click to download the "one page" (not)Microsoft Word version`
+      }
+      ,{
+        url: "asset/doc/CV-resume.rtf",
+        icon: "file-word",
+        text: `Click to download the "full experience" (not)Microsoft Word version`
+      }
+    ]
+  }
+#about-me
+.about-me
+  .about-me__header=header
+  .about-me__full-name=myFullName
+  .about-me__title=myTitle
+  .about-me__avatar-wrapper
+    img(src=imgPath)
+  p=slogan
+  h2=achievement.title
+  p=achievement.content
+  .about-me__link-list
+    each link in coolStuff.linkList
+      a.about-link(href=link.url)
+        span.about-link-description=link.text
+        span(class=`resume-icon-${link.icon}`)
