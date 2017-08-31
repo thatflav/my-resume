@@ -19,3 +19,15 @@
 .landing-page__sub-title {
   font-size: 3rem;
 }
+
+.landing-page__social {
+  display: inline-flex;
+  margin-top: 3rem;
+}
+
+.landing-page__social-item {
+  color: #fff;
+  padding: 0.1rem 0.3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
