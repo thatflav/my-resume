@@ -32,7 +32,8 @@
     pointer-events: all;
 
     .my-cv__icon--plus {
-      transform: rotateZ(45deg)
+      transform: rotateZ(45deg);
+      cursor: pointer;
     }
   }
 }

@@ -1,0 +1,30 @@
+-
+  var menuList = [
+    {
+      label: 'home',
+      icon: 'home',
+      link: '#landing-page'
+    },
+    {
+      label: 'about me',
+      icon: 'wondering',
+      link: '#about-me'
+    },
+    {
+      label: 'what I can do',
+      icon: 'hammer',
+      link: '#what-i-can-do',
+    },
+    {
+      label: 'experience',
+      icon: 'airplane',
+      link: '#experience'
+    }
+  ]
+#menu
+.menu
+  .menu__list
+    each menu in menuList
+      a.menu__link(href=menu.link)
+        span(class=`my-cv__icon--${menu.icon}`)
+        span.menu__label=menu.label
