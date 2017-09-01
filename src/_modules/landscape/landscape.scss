@@ -8,7 +8,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-manatee);
+  background-color: var(--color-scorpion);
   transition: 0.25s;
 }
 
@@ -18,8 +18,8 @@
   color: var(--color-white);
   position: fixed;
   top: 1rem;
-  left: 1rem;
-  font-size: 3rem;
+  right: 1rem;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: center;
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .landscape__list {
